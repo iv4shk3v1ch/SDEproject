@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nickname Generator</title>
+    <!-- Подключаем библиотеку Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha256-h3CkX+7A0f5x+TazjulW+PH3veR2b9CCiEx2Em7uMhA=" crossorigin="anonymous" />
+    <style>
+        /* Немного стилей для улучшения внешнего вида */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5; /* Пастельный нейтральный фоновый цвет */
+        }
+
+        header {
+            background-color: #3498db; /* Цвет заголовка */
+            padding: 20px;
+            color: white;
+            font-size: 24px;
+        }
+
+        label {
+            display: block;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        input {
+            padding: 8px;
+            margin-bottom: 20px;
+            width: 200px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #4CAF50; /* Зеленый цвет */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049; /* Зеленый цвет при наведении */
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 12px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        Nickname and Avatar Generator
+    </header>
+
+    <form action="/generate-nickname" method="post">
+        <label for="inputString">Ask for a nickname:</label>
+        <input type="text" id="inputString" name="inputString" placeholder="Input text">
+        <!-- Используем иконку Font Awesome для кнопки -->
+        <button><i class="fas fa-magic"></i> Generate!</button>
+    </form>
+
+    <footer>
+        by Vladimir
+    </footer>
+
+    <!-- Подключаем библиотеку Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js" integrity="sha256-0Xv4DAhq5u8yns6V1gZEv4Qd5UeZIhpv/uA3w+1l+WI=" crossorigin="anonymous"></script>
+</body>
+</html>
