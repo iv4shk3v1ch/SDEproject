@@ -3,15 +3,18 @@ This is my university project about webservices. I developed a nickname generato
 
 server.js - main file, which is responsible for calling all other modules and creating the server itself
 
-VIEWS
+VIEWS:
+
 main.html - main page for inserting data from user
 error.html - page of error for any unaccessable URL
 nicknames.ejs - page with list of generated nicknames (use ejs engine for render)
 
-CONTROLLERS
+CONTROLLERS:
+
 nicknameController.js - controller for data wich came from user's input on main.html
 
-MODELS
+MODELS:
+
 nicknameModel.js - file for sending request and recieving response from API. request - user keywords, response - nicknames in JSON format
 
 
